@@ -7,7 +7,7 @@ This is a fork of [felixrabe/fig-nodejs-mongodb-example](https://github.com/feli
 1. Download the hypriot-pi SD card image as described in [blog.hypriot.com](http://blog.hypriot.com/kick-ass-raspberry-pi-2-having-a-forbidden-love-affair-with-docker-1-dot-4-1)
 2. Flash the SD card image.
 3. Boot the Raspberry Pi
-4. Log into the Raspberry Pi with `root` and passwort `hypriot`.
+4. Log into the Raspberry Pi with `root` and passwort `hypriot`. Docker 1.4.1 is already running, so we now have a good platform to work with.
 
 ## Installation
 
