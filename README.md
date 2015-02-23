@@ -1,9 +1,30 @@
-Simple List Application
-=======================
+# Simple List Application on the Raspberry Pi
 
-    git clone https://github.com/felixrabe/fig-nodejs-mongodb-example.git
-    cd fig-nodejs-mongodb-example
-    fig up
+This is a fork of [felixrabe/fig-nodejs-mongodb-example](https://github.com/felixrabe/fig-nodejs-mongodb-example) to test `fig` and `docker` on a Raspberry Pi.
+
+## Preparation
+
+1. Download the hypriot-pi SD card image as described in [blog.hypriot.com](http://blog.hypriot.com/kick-ass-raspberry-pi-2-having-a-forbidden-love-affair-with-docker-1-dot-4-1)
+2. Flash the SD card image.
+3. Boot the Raspberry Pi
+4. Log into the Raspberry Pi with `root` and passwort `hypriot`.
+
+## Installation
+
+On the Raspberry Pi, install `fig`
+
+```bash
+apt-get install python-pip
+pip install fig
+```
+
+Now clone this repo and power up the two containers with `fig up`.
+
+```bash
+git clone https://github.com/StefanScherer/fig-nodejs-mongodb-example.git
+cd fig-nodejs-mongodb-example
+fig up
+```
 
 
 License
@@ -11,7 +32,7 @@ License
 
 The MIT License (MIT)
 
-Copyright (c) 2014 Felix Rabe
+Copyright (c) 2015 Stefan Scherer
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
