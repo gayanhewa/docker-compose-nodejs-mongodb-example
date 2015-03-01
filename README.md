@@ -1,6 +1,8 @@
 # Simple List Application on the Raspberry Pi
 
-This is a fork of [felixrabe/fig-nodejs-mongodb-example](https://github.com/felixrabe/fig-nodejs-mongodb-example) to test `fig` and `docker` on a Raspberry Pi.
+This is a fork of [felixrabe/fig-nodejs-mongodb-example](https://github.com/felixrabe/fig-nodejs-mongodb-example) to test `docker-compose` and `docker` on a Raspberry Pi.
+
+Notice: `fig` has been renamed to `docker-compose` [recently](https://github.com/docker/compose/releases).
 
 ## Preparation
 
@@ -11,19 +13,19 @@ This is a fork of [felixrabe/fig-nodejs-mongodb-example](https://github.com/feli
 
 ## Installation
 
-On the Raspberry Pi, install `fig`
+On the Raspberry Pi, install `docker-compose`
 
 ```bash
 apt-get install python-pip
-pip install fig
+pip install docker-compose
 ```
 
-Now clone this repo and power up the two containers with `fig up`.
+Now clone this repo and power up the two containers with `docker-compose up`.
 
 ```bash
-git clone https://github.com/StefanScherer/fig-nodejs-mongodb-example.git
-cd fig-nodejs-mongodb-example
-fig up
+git clone https://github.com/StefanScherer/docker-compose-nodejs-mongodb-example.git
+cd docker-compose-nodejs-mongodb-example
+docker-compose up
 ```
 
 
