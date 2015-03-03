@@ -6,18 +6,18 @@ Notice: `fig` has been renamed to `docker-compose` [recently](https://github.com
 
 ## Preparation
 
-1. Download the hypriot-pi SD card image as described in [blog.hypriot.com](http://blog.hypriot.com/kick-ass-raspberry-pi-2-having-a-forbidden-love-affair-with-docker-1-dot-4-1)
+1. Download the HypriotOS SD card image as described in [blog.hypriot.com](http://blog.hypriot.com/kick-ass-raspberry-pi-2-having-a-forbidden-love-affair-with-docker-1-dot-4-1)
 2. Flash the SD card image.
 3. Boot the Raspberry Pi
 4. Log into the Raspberry Pi with `root` and passwort `hypriot`. Docker 1.4.1 is already running, so we now have a good platform to work with.
 
 ## Installation
 
-On the Raspberry Pi, install `docker-compose`
+On the Raspberry Pi, install `docker-compose` version 1.1.0 with
 
 ```bash
-apt-get install python-pip
-pip install docker-compose
+curl -L https://github.com/hypriot/compose/releases/download/1.1.0-raspbian/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose
 ```
 
 Now clone this repo and power up the two containers with `docker-compose up`.
