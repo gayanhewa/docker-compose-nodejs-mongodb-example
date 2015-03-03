@@ -28,6 +28,16 @@ cd docker-compose-nodejs-mongodb-example
 docker-compose up
 ```
 
+Now open a browser with
+
+```bash
+open http://ip-or-your-rpi:8080
+```
+
+and see the Node.js sample running in one Docker container that uses the MongoDB Docker container to store the input.
+
+See the `docker-compose.yml` for details how the two Docker containers are connected.
+
 
 License
 -------
